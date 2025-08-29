@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Enhanced Interactive Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Interactive Quiz</h1>
+
+        <!-- Start screen -->
+        <div id="start-screen">
+            <button id="start-btn">Start Quiz</button>
+        </div>
+
+        <!-- Quiz form hidden initially -->
+        <div id="quiz-area" style="display:none;">
+            <div id="timer" class="timer">Time left: 30s</div>
+            
+            <form id="quiz-form">
+                <div id="quiz-questions"></div>
+                
+                <div class="button-group">
+                    <!-- Navigation buttons will be added dynamically -->
+                </div>
+                
+                <button type="submit" id="submit-btn">Submit Answers</button>
+            </form>
+            
+            <div id="result"></div>
+            <button id="reset-btn">Retake Quiz</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
